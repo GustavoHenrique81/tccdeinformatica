@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+      <link rel="stylesheet"  href="\css\logoEnome.css" />
+      <link rel="stylesheet"  href="\css\cadastro.css" />
+      <link rel="stylesheet"  href="\css\planodefundo.css" />
+      <link rel="stylesheet"  href="\css\menu.css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/img/logo pnj.png" alt="Logo do seu site">
+        </div>
+        <div class="nome-site">
+            HMC - Construção
+        </div>
+        
+    </header>
+    <button class="sidebar-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="\img\logo pnj.png" class="logo-menu" alt="" />
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="index.html" target="_blank">Início</a>
+        </li>
+        <li>
+          <a href="\teste de site\login.html" target="_blank">Login</a>
+        </li>
+        <li>
+          <a href="\teste de site\cadastro.html" target="_blank">Cadastro</a>
+        </li>
+        <li>
+          <a href="\teste de site\Loja.html" target="_blank">Loja</a>
+        </li>
+        <li>
+          <a href="\teste de site\sobre.html" target="_blank">Teste de cadastro com Local storage</a>
+        </li>
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/login?lang=pt" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjG-MzcsfSFAxVKyeMHHQR6DHMYABAAGgJ5bQ&ase=2&gclid=EAIaIQobChMIxvjM3LH0hQMVSsnjBx0EegxzEAAYASAAEgJnJvD_BwE&ei=gV42ZsnFNMnI1sQPiLycgA4&ohost=www.google.com&cid=CAASJeRohgW0_DZIJrV7Qlun4tnc1fA4RyfuAl91dH5NTjRDJAvezM4&sig=AOD64_3Q68xpj3PMsqZfQs7bTw9D-tlN5Q&q&sqi=2&nis=4&adurl&ved=2ahUKEwiJisTcsfSFAxVJpJUCHQgeB-AQ0Qx6BAgPEAE" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <div id="fireworksContainer">
+        <!-- Fogos de artifício serão criados aqui dinamicamente -->
+    </div>
+    <div class="container-cadastro">
+    
+  <form action="cadastrar.php">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <p class="branco">Usuário:<input type="text" name="Usuario" size="50" ></p>
+                <p class="branco">Email:<input type="email" name="e-mail" size="50" value=""></p>
+                <p class="branco">Senha:<input type="password" name="senha" size="50"></p>
+                <p class="branco">Confirme sua senha:<input type="password" name="senha" size="40"></p>
+                <p class="branco">Informe sua idade:<input type="number" name="informesuaidade" min="1" max="100" value="18" step="1"></p>
+                <label>Data de Nascimento:</label>
+                <span><input type="date" size="20"></span><br/>
+                <p class="branco">Digite sua mensagem:<br/>
+                    <textarea name="Digitesuamensagem" rows="8" cols="40"></textarea>
+                </p>
+                
+                <label for="estadocivil">Estado Civil:</label>
+                <input name="estadocivil" list="Estados" type="text">
+                <datalist id="Estados">
+                    <form class="no-widget">
+                        <select name="Estado">
+                            <option>Solteiro</option>
+                            <option>Casado</option>
+                            <option>Viúvo</option>
+                            <option>Divorciado</option>
+                        </select>
+                    </form>
+    
+                </datalist>
+                <form action="arquivo_anexado.php" method="post" enctype="multipart/form-data">
+                    <p><label>Escolher arquivo:<input type="file" name="Escolherarquivo"></label><input type="submit" value="enviar">
+                    </p>
+                </form>
+                <p><input type="submit" value="cadastrar"></p>
+            </fieldset>
+    
+        </form>
+    </div>
+    <script src="\js\menu.js"></script>
+    <script src="\js\firework.js"></script>
+</body>
+</html>

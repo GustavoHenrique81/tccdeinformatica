@@ -1,0 +1,26 @@
+/*========================  INDEX  =================================*/
+
+.imagem-direita{
+    float: right;
+    margin-right: 0px;
+    width: 20%;
+    height: 20%;
+}
+
+.imagem-grande{
+    width: 100%;
+    height: 100%;
+}
+
+.historia{
+    text-align: justify;
+    margin-right: 22%;
+    font-size: 25px;
+    color: black;
+}
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #0056b3;
+    margin-right: 22%;
+}

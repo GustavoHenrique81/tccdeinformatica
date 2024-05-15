@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet"  href="\css\logoEnome.css" />
+    <link rel="stylesheet"  href="\css\sobre.css" />
+    <link rel="stylesheet"  href="\css\planodefundo.css" />
+    <link rel="stylesheet"  href="\css\menu.css" />
+
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/site/img/logo pnj.png" alt="Logo do seu site">
+    </div>
+    <div class="nome-site">
+      HMC - Construção
+    </div>
+  </header>
+  <button class="sidebar-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="\site\img\logo pnj.png" class="logo-menu" alt="" />
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <!-- links -->
+    <ul class="links">
+      <li>
+        <a href="\site\inicio.html" target="_blank">Início</a>
+      </li>
+      <li>
+        <a href="\teste de site\login.html" target="_blank">Login</a>
+      </li>
+      <li>
+        <a href="\teste de site\cadastro.html" target="_blank">Cadastro</a>
+      </li>
+      <li>
+        <a href="\teste de site\Loja.html" target="_blank">Loja</a>
+      </li>
+      <li>
+        <a href="\teste de site\sobre.html" target="_blank">Teste de cadastro com Local storage</a>
+      </li>
+    </ul>
+    <!-- social media -->
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/login?lang=pt" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjG-MzcsfSFAxVKyeMHHQR6DHMYABAAGgJ5bQ&ase=2&gclid=EAIaIQobChMIxvjM3LH0hQMVSsnjBx0EegxzEAAYASAAEgJnJvD_BwE&ei=gV42ZsnFNMnI1sQPiLycgA4&ohost=www.google.com&cid=CAASJeRohgW0_DZIJrV7Qlun4tnc1fA4RyfuAl91dH5NTjRDJAvezM4&sig=AOD64_3Q68xpj3PMsqZfQs7bTw9D-tlN5Q&q&sqi=2&nis=4&adurl&ved=2ahUKEwiJisTcsfSFAxVJpJUCHQgeB-AQ0Qx6BAgPEAE" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+<form id="cadastroForm">
+    <h2>Cadastro</h2>
+    <input type="text" id="nome" placeholder="Nome" required>
+    <div class="form-group">
+        <input type="date" id="dataNascimento" placeholder="Data de Nascimento" required>
+    </div>
+    <div class="form-group">
+        <input type="tel" id="telefone" placeholder="Telefone" required>
+    </div>
+    <input type="email" id="emailCadastro" placeholder="Email" required>
+    <input type="password" id="senhaCadastro" placeholder="Senha" required>
+    <input type="password" id="confirmarSenha" placeholder="Confirmar Senha" required>
+    <input type="submit" value="Cadastrar">
+</form>
+
+
+<form id="loginForm">
+    <h2>Login</h2>
+    <input type="email" id="emailLogin" placeholder="Email" required>
+    <input type="password" id="senhaLogin" placeholder="Senha" required>
+    <input type="submit" value="Login">
+</form>
+
+<script src="\teste de site\js\localstorage.js"></script>
+<script src="\teste de site\js\menu.js"></script>
+
+</body>
+</html>

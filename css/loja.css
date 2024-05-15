@@ -1,0 +1,146 @@
+/*========================  LOJA  =================================*/
+
+.item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color:darkblue;
+    border-radius: 80px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    /* height: 240px; width: 250px;   Ajuste o tamanho da caixa de itens ;*/
+    border: 6px solid #000000; /* Ajuste o tamanho da borda da caixa de itens */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #e6dada; /* Ajuste a cor da caixa de itens */
+}
+
+.item img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #000000;
+    font-weight: bold;
+}
+
+.item p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.quantidade{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.titulo{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+    
+}
+
+.item label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.item input {
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.lista-itens {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.lista-itens li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+#total {
+    text-align: left;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.link-inicio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link-inicio a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.link-inicio a:hover {
+    text-decoration:none;
+}
